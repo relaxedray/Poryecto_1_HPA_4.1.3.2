@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_1_HPA_4.LoginUi"
+             BackgroundImageSource="background.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source="logo.png" WidthRequest="180" HeightRequest="180"></Image>
+            
+            <Entry x:Name="txtuser" Placeholder="Usuario" TextColor="Black" PlaceholderColor="Black" BackgroundColor="LightBlue"></Entry>
+            <Entry x:Name="txtpass" Placeholder="Contraseña" IsPassword="True" TextColor="Black" PlaceholderColor="Black" BackgroundColor="LightBlue"></Entry>
+            
+            <Button
+             VerticalOptions="Center"
+                Text="iniciar sesion"
+                TextColor="Black"
+                BackgroundColor="LightBlue"
+                BorderColor="DarkBlue"
+                BorderWidth="1.2"
+                CornerRadius="50"
+                Clicked="Button_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_1_HPA_4.VerListado2">
+    <ListView x:Name="MyListView">
+
+        <!--Built in Cells-->
+        <!--<ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding .}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>-->
+
+        <!--Custom View Cells-->
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Label Text="{Binding Nombre}"  />
+                        <Label Text="{Binding Cedula}" />
+                        <Label Text="{Binding Fecha}" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+</ContentPage>

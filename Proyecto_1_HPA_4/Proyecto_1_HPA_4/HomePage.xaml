@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_1_HPA_4.HomePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Bienvenido Profesor: Juan Zamora" TextColor="Black" FontSize="25" Margin="10"></Label>
+            <Button
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+                WidthRequest="200"
+                Text="Marcar Asistencia"
+                TextColor="Black"
+                BackgroundColor="LightBlue"
+                BorderColor="DarkBlue"
+                BorderWidth="1.2"
+                CornerRadius="50"
+                Clicked="Pasar_Lista"/>
+            <Button
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+             WidthRequest="200"
+                Text="Ver Listado"
+                TextColor="Black"
+                BackgroundColor="LightBlue"
+                BorderColor="DarkBlue"
+                BorderWidth="1.2"
+                CornerRadius="50"
+                Clicked="Ver_Listado"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
